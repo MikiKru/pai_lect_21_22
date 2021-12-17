@@ -1,13 +1,11 @@
 package pl.edu.pbs.pai.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import pl.edu.pbs.pai.model.User;
+import pl.edu.pbs.pai.model.entities.User;
 import pl.edu.pbs.pai.service.UserService;
 
 import java.util.List;
-import java.util.Optional;
 
 @RequestMapping("/api")
 //@Controller       // klasa o specjalnym znaczeniu - mapowanie adresów - zwraca widok

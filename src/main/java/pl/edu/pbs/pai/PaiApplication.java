@@ -2,10 +2,7 @@ package pl.edu.pbs.pai;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import pl.edu.pbs.pai.model.User;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
-
-import java.time.LocalDateTime;
 
 @EnableSwagger2 // należy dodać aby korzystać ze swagger ui
 @SpringBootApplication
