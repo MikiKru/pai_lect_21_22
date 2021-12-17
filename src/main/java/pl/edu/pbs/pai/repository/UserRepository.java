@@ -1,12 +1,12 @@
 package pl.edu.pbs.pai.repository;
 
+
+import org.springframework.data.jpa.repository.JpaRepository;
 import pl.edu.pbs.pai.model.entities.User;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.Optional;
 
-public interface UserRepository {
-    public static List<User> users = new ArrayList<>();
+public interface UserRepository extends JpaRepository<User, Integer> {
+    Optional<User> findFirstByLogin(String login);
+
 }
